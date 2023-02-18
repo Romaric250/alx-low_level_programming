@@ -1,18 +1,20 @@
 #include <stdio.h>
 /**
- * main - prints te digit numbers 0-9 without using char or printf/puts 
+ * main - prints numbers 0-9 without using char or printf/puts,
+ * and putchar 2times
 (*
  * Return: 0 on success
  */
 int main(void)
 {
-	int num = 0;
+	int n = '0';
 
-	while (num <= 9)
+	while (n <= '9')
 	{
-		putchar(num);
-		num++;
+		putchar(n);
+		n++;
 	}
 	putchar('\n');
 	return (0);
 }
+
