@@ -1,21 +1,21 @@
 #include <stdio.h>
 /**
- * main - prints all possible different combinations of two digits.
+ * main - print numbers from 00 to 99.
 (*
  * Return: 0 on success
  */
 int main(void)
 {
-	int x = '0';
-	int y = '0';
+	int i = '0';
+	int j = '0';
 
-	while (x <= '9')
+	while (i <= '9')
 	{
-		while (y <= '9')
+		while (j <= '9')
 		{
-			putchar(x);
-			putchar(y);
-			if (y == '9' && x == '9')
+			putchar(i);
+			putchar(j);
+			if (j == '9' && i == '9')
 			{
 				putchar('\n');
 			}
@@ -24,13 +24,13 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
-			y++;
+			j++;
 		}
-		if (y >= '9')
+		if (j >= '9')
 		{
-			y = '0';
+			j = '0';
 		}
-		x++;
+		i++;
 	}
 	return (0);
 }
