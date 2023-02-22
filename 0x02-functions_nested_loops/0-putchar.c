@@ -1,11 +1,13 @@
-#include<stdio.h>
+#include<main.h>
+#include <unistd.h>
+
 /**
- * main - check the code
+ * _putchar - writes the character c to stdout
+ * @c: The letter to print
  *
- * Return: Always 0.
  */
-int main(void)
+int _putchar(char c)
 {
-	printf("_putchar");
-	return 0;
-}	
+	return (write(1, &c, 1));
+}
+	
