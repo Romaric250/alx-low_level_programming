@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * jack-bauyer-function
+ * jack-bauyer - function of 
  * Description: function prints every minute in one day
  * Return: NULL.
  */
