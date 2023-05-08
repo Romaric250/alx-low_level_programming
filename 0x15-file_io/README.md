@@ -1,1 +1,1 @@
-file input and output project
+this dir contains file input/output projects
