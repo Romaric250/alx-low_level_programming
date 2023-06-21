@@ -12,7 +12,7 @@ int OutputLeadingSpaces(int nSpaces){
 int OutputLineOfStars(int nStars)
 {
         int i;
-        for (i = 0; i <= nStars; i++)
+        for (i = 1; i <= nStars; i++)
         {
                 printf("*");
         }
