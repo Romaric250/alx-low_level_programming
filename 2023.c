@@ -28,6 +28,7 @@ void Adjust(int NoOfSpaces, int NoOfStars)
 void Initialise(int MaxNoOfStars, int NoOfSpaces, int NoOfStars)
 {
         int i, j;
+	//replace  maxNoOfStars/2 to MaxNoOfStars and uncomment the other lines bellow
         for (i = 0; i < MaxNoOfStars/2; i++)
         {
                 Adjust(NoOfSpaces, NoOfStars);
@@ -38,8 +39,8 @@ void Initialise(int MaxNoOfStars, int NoOfSpaces, int NoOfStars)
                 }
                 else
                 {
-  //                      NoOfSpaces++;
-//NoOfStars -= 2;
+           	///NoOfSpaces++;
+		//NoOfStars -= 2;
                 }
         }
 }
