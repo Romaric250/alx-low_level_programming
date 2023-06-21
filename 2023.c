@@ -28,7 +28,7 @@ void Adjust(int NoOfSpaces, int NoOfStars)
 void Initialise(int MaxNoOfStars, int NoOfSpaces, int NoOfStars)
 {
         int i, j;
-        for (i = 0; i < MaxNoOfStars; i++)
+        for (i = 0; i < MaxNoOfStars/2; i++)
         {
                 Adjust(NoOfSpaces, NoOfStars);
                 if (i < MaxNoOfStars/2)
@@ -38,8 +38,8 @@ void Initialise(int MaxNoOfStars, int NoOfSpaces, int NoOfStars)
                 }
                 else
                 {
-                        NoOfSpaces++;
-                        NoOfStars -= 2;
+  //                      NoOfSpaces++;
+//NoOfStars -= 2;
                 }
         }
 }
