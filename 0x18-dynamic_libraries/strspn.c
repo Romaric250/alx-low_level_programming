@@ -11,7 +11,7 @@ unsigned int _strspn(char *s, char *accept) {
   int count = 0;
 
   for (i = 0; s[i] != '\0'; i++) {
-    if (strchr(accept, s[i]) != NULL) {
+    if (_strchr(accept, s[i]) != NULL) {
       count++;
     } else {
       break;
