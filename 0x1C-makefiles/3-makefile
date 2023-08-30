@@ -1,18 +1,25 @@
 CC = gcc
-SRC = main.c school.c
+SRC = main.c file1.c file2.c
 OBJ = $(SRC:.c=.o)
 NAME = school
 RM = rm -f
 
-all : $(OBJ)
+all: $(NAME)
+
+$(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-clean :
+%.o: %.c
+	$(CC) -c $< -o $@
+
+clean:
 	$(RM) *~ $(NAME)
 
-oclean :
+oclean:
 	$(RM) $(OBJ)
 
-fclean : clean oclean
+fclean: clean oclean
 
-re : oclean all
+re: fclean all
+
+.PHONY: all clean oclean fclean re
